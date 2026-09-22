@@ -47,7 +47,7 @@ if (bookingForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/bookings",
+                 "https://hotelhub-p5vf.onrender.com/api/bookings",
                 {
                     method: "POST",
 
