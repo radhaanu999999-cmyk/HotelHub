@@ -80,18 +80,16 @@ if (bookingForm) {
                 bookingMessage.style.color = "red";
 
             }
+  } catch (error) {
 
+    console.error("Search Error:", error);
 
-        } catch (error) {
+    searchMessage.textContent =
+        "Search Error: " + error.message;
 
-            console.error("Booking Error:", error);
+    searchMessage.style.color = "red";
 
-            bookingMessage.textContent =
-                "Unable to connect to the server.";
-
-            bookingMessage.style.color = "red";
-
-        }
+}
 
     });
 
