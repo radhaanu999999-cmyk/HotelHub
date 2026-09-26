@@ -7,7 +7,14 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        "https://radhaanu999999-cmyk.github.io",
+        "http://localhost:5500"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type"]
+}));
 app.use(express.json());
 
 const hotelRoutes = require("./routes/hotelRoutes");
