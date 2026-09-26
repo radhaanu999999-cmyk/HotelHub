@@ -80,14 +80,14 @@ if (bookingForm) {
                 bookingMessage.style.color = "red";
 
             }
-  } catch (error) {
+ } catch (error) {
 
-    console.error("Search Error:", error);
+    console.error("Booking Error:", error);
 
-    searchMessage.textContent =
-        "Search Error: " + error.message;
+    bookingMessage.textContent =
+        "Unable to connect to the server.";
 
-    searchMessage.style.color = "red";
+    bookingMessage.style.color = "red";
 
 }
 
